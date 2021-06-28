@@ -1,15 +1,19 @@
 // import iconHot from "../../assets/images/tag/icon-hot.svg"
 
+export const MENU_HEIGHT = 64; // Header height
+export const MENU_ENTRY_HEIGHT = 55; // Height of item
+export const SIDEBAR_WIDTH_FULL = 210; // Width of sidebar
+export const SIDEBAR_WIDTH_REDUCED = 0; // 56 Width of sidebar collapse mini only icon
+
 /**
  * label: string
  * icon: svg
  * href: https || /path
- * calloutClass: 'rainbow' || className
+ * calloutClass: 'rainbow' || className // className for item
  * initialOpenState: true || false
  * items: array sample parent
  * att: attach => text || icon.png
  */
-
 export const links = [
   // {
   //   label: "POOLS",
@@ -20,91 +24,26 @@ export const links = [
   //   calloutClass: 'rainbow',
   // },
   {
-    label: "Home",
+    label: "HOME",
     icon: "HomeIcon",
     href: "/",
     calloutClass: 'rainbow',
   },
   {
-    label: "Trade",
-    icon: "TradeIcon",
-    initialOpenState: true,
-    items: [ 
-      {
-        label: "Exchange",
-        href: "/swap",
-      },
-      {
-        label: "Liquidity",
-        href: "/pool",
-      },
-    ],
-  },
-  {
-    label: "Earning",
-    icon: "TicketIcon",
-    att: "SOON",
-    href: "#",
-  },
-  {
-    label: "NFT Marketplace",
+    label: "NEWS",
     icon: "NftIcon",
-    att: "iconHot",
-    href: "#",
+    href: "/news",
   },
   {
-    label: "FLAN Gallery",
-    icon: "FlanIcon",
-    att: "SOON",
-    href: "#",
-  },
-  {
-    label: "Sport NFT",
-    icon: "SpotIcon",
-    href: "#",
-  },
-  {
-    label: "Launchpad",
-    icon: "LaunchpadIcon",
-    att: "SOON",
-    href: "#",
-  },
-  {
-    label: "Gamification",
-    icon: "GamificationIcon",
-    att: "iconHot",
-    href: "#",
-  }, 
-  {
-    label: "ETH2.0",
-    icon: "ETH2Icon",
-    att: "SOON",
-    href: "#",
-  },
-  {
-    label: "Info",
-    icon: "InfoIcon",
-    att: "SOON",
-    href: "#", 
-  },
-  {
-    label: "Contact",
+    label: "DOCS",
     icon: "GroupsIcon",
-    items: [ 
-      {
-        label: "Twitter",
-        href: "#",
-      },
-      {
-        label: "Medium",
-        href: "#",
-      },
-      {
-        label: "Telegram",
-        href: "#",
-      },
-    ],
+    href: "/docs",
   },
+  {
+    label: "CLAIM",
+    icon: "SunIcon",
+    href: "/claim",
+  }
 ];
 
 export const socials = [
@@ -172,8 +111,3 @@ export const socials = [
     href: "https://twitter.com/pancakeswap",
   },
 ];
-
-export const MENU_HEIGHT = 64; 
-export const MENU_ENTRY_HEIGHT = 55; // Height of item
-export const SIDEBAR_WIDTH_FULL = 210; // Width of sidebar
-export const SIDEBAR_WIDTH_REDUCED = 56; // 56 Width of siderbar collapse mini only icon

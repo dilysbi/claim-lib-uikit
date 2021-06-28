@@ -6,10 +6,10 @@ const Icon: React.FC<SvgProps> = (props) => {
   return (
     <Svg xmlns="http://www.w3.org/2000/svg" width="17.346" height="17.208" viewBox="0 0 17.346 17.208" {...props}>
       <g id="Group_607" data-name="Group 607" transform="translate(0)">
-        <path id="Rectangle_114" data-name="Rectangle 114" d="M.008,0H4.069A3.781,3.781,0,0,1,7.85,3.781v0A4.069,4.069,0,0,1,3.781,7.85h0A3.781,3.781,0,0,1,0,4.069V.008A.008.008,0,0,1,.008,0Z" transform="translate(9.496 9.358)" fill="#c5835f"/>
-        <path id="Rectangle_115" data-name="Rectangle 115" d="M3.781,0h0A4.069,4.069,0,0,1,7.85,4.069v0A3.781,3.781,0,0,1,4.069,7.85H.008A.008.008,0,0,1,0,7.842V3.781A3.781,3.781,0,0,1,3.781,0Z" transform="translate(7.85 17.208) rotate(-180)" fill="#c5835f"/>
-        <path id="Rectangle_116" data-name="Rectangle 116" d="M.008,0H4.069A3.781,3.781,0,0,1,7.85,3.781v0A4.069,4.069,0,0,1,3.781,7.85h0A3.781,3.781,0,0,1,0,4.069V.008A.008.008,0,0,1,.008,0Z" transform="translate(7.85 7.85) rotate(180)" fill="#c5835f"/>
-        <path id="Rectangle_117" data-name="Rectangle 117" d="M3.781,0h0A4.069,4.069,0,0,1,7.85,4.069v0A3.781,3.781,0,0,1,4.069,7.85H.008A.008.008,0,0,1,0,7.842V3.781A3.781,3.781,0,0,1,3.781,0Z" transform="translate(9.496)" fill="#c5835f"/>
+        <path id="Rectangle_114" data-name="Rectangle 114" d="M.008,0H4.069A3.781,3.781,0,0,1,7.85,3.781v0A4.069,4.069,0,0,1,3.781,7.85h0A3.781,3.781,0,0,1,0,4.069V.008A.008.008,0,0,1,.008,0Z" transform="translate(9.496 9.358)" fill="#F9AE2E"/>
+        <path id="Rectangle_115" data-name="Rectangle 115" d="M3.781,0h0A4.069,4.069,0,0,1,7.85,4.069v0A3.781,3.781,0,0,1,4.069,7.85H.008A.008.008,0,0,1,0,7.842V3.781A3.781,3.781,0,0,1,3.781,0Z" transform="translate(7.85 17.208) rotate(-180)" fill="#F9AE2E"/>
+        <path id="Rectangle_116" data-name="Rectangle 116" d="M.008,0H4.069A3.781,3.781,0,0,1,7.85,3.781v0A4.069,4.069,0,0,1,3.781,7.85h0A3.781,3.781,0,0,1,0,4.069V.008A.008.008,0,0,1,.008,0Z" transform="translate(7.85 7.85) rotate(180)" fill="#F9AE2E"/>
+        <path id="Rectangle_117" data-name="Rectangle 117" d="M3.781,0h0A4.069,4.069,0,0,1,7.85,4.069v0A3.781,3.781,0,0,1,4.069,7.85H.008A.008.008,0,0,1,0,7.842V3.781A3.781,3.781,0,0,1,3.781,0Z" transform="translate(9.496)" fill="#F9AE2E"/>
       </g>
     </Svg>
   

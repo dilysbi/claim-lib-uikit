@@ -73,7 +73,7 @@ const MenuEntryNav = styled.div<Props>`
   align-items: center;
   height: ${MENU_ENTRY_HEIGHT}px;
   padding: ${({ secondary }) => (secondary ? "0 20px" : "0 10px")};
-  font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
+  font-size: ${({ secondary }) => (secondary ? "18px" : "18px")};
   color: ${({ theme }) => theme.colors.textSubtle};
 
   a {
@@ -81,7 +81,8 @@ const MenuEntryNav = styled.div<Props>`
     align-items: center;
     width: 100%;
     height: 100%;
-    color: #f9ae2e !important;
+    color: #F9AE2E !important;
+    // font-weight: 600;
   }
 
   svg {

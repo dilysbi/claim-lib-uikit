@@ -18,7 +18,7 @@ const StyledBody = styled.div`
   color: black;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding-left: 25px;
 
   ul {

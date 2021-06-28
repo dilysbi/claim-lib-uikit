@@ -2,7 +2,7 @@ import { Colors } from "./types";
 
 export const baseColors = {
   failure: "#ED4B9E",
-  primary: "#954306", // 1FC7D4
+  primary: "#F9AE2E",
   primaryBright: "#53DEE9",
   primaryDark: "#0098A1",
   secondary: "#7645D9",
@@ -20,15 +20,15 @@ export const lightColors: Colors = {
   background: "#FAF9FA",
   backgroundDisabled: "#E9EAEB",
   contrast: "#191326",
-  invertedContrast: "#FFFFFF",
-  input: "rgba(249, 174, 46, 0.1)", // "#eeeaf4",
+  invertedContrast: "rgba(249, 174, 46, 0.2)", // hover select list curreny on modal swap
+  input: "rgba(249, 174, 46, 0.1)",
   inputSecondary: "#d7caec",
   tertiary: "#EFF4F5",
-  text: "#954306", // "#721e00"
+  text: "#F9AE2E",
   textDisabled: "#BDC2C4",
-  textSubtle: "#C5835F", // "#8f80ba",
+  textSubtle: "#F9AE2E", 
   borderColor: "#E9EAEB",
-  card: "#FFF9F0", // "#FFFFFF",
+  card: "#FFFFFF", 
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
   },

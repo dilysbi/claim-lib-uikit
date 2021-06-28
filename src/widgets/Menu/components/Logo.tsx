@@ -7,7 +7,6 @@ import Flex from "../../../components/Box/Flex";
 // import { HamburgerIcon, HamburgerCloseIcon, LogoIcon as LogoWithText } from "../icons";
 import { HamburgerIcon, HamburgerCloseIcon } from "../icons";
 import MenuButton from "./MenuButton";
-
 // import logoPng from "../../../assets/images/logo.svg";
 // import logoTextPng from "../../../assets/images/logo/logo-text.png";
 
@@ -43,6 +42,7 @@ const BoxImage = styled.div<{ isMobile: boolean }>`
   align-items: center;
 
   img {
+    width: ${({ isMobile }) => (isMobile ? '110px' : '160px')};
     height: auto;
   }
 
@@ -56,10 +56,11 @@ const Logo: React.FC<Props> = ({ isMobile, isPushed, togglePush, isDark, href })
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = ( 
     <BoxImage isMobile={isMobile}>
-      <img src="/images/logo/logo-full.svg" alt="logo" width={140} />
+      <img src="/images/logo/logo-full.svg" alt="logo"/>
+      {/* <img src={logoPng} alt="logo"/> */}
+
       {/* {!isMobile && <img src="/images/logo/logo-text.png" alt="logo" width={120} />} */}
  
-      {/* <img src={logoPng} alt="logo" width={140} /> */}
       {/* {!isMobile && <img src={logoTextPng} alt="logo" width={120} />} */}
       {/* <LogoIcon className="mobile-icon" /> */}
       {/* <LogoWithText className="desktop-icon" isDark={isDark} /> */}
@@ -69,25 +70,27 @@ const Logo: React.FC<Props> = ({ isMobile, isPushed, togglePush, isDark, href })
   return (
     <Flex>
       {/* Icon collapse siderbar menu */}
-      <MenuButton aria-label="Toggle menu" onClick={togglePush} mr="2px">
-        {isPushed ? (
-          <HamburgerCloseIcon width="24px" color="textSubtle" />
-        ) : (
-          <HamburgerIcon width="24px" color="textSubtle" />
-        )}
-      </MenuButton>
-
-      {!isMobile && (
-        isAbsoluteUrl ? (
-          <StyledLink as="a" href={href} aria-label="Home page">
-            {innerLogo}
-          </StyledLink>
-        ) : (
-          <StyledLink to={href} aria-label="Home page">
-            {innerLogo}
-          </StyledLink>
-        )
+      {isMobile && (
+        <MenuButton aria-label="Toggle menu" onClick={togglePush} mr="2px">
+          {isPushed ? (
+            <HamburgerCloseIcon width="24px" color="textSubtle" />
+          ) : (
+            <HamburgerIcon width="24px" color="textSubtle" />
+          )}
+        </MenuButton>
       )}
+
+      {/* {!isMobile && ( */}
+      {isAbsoluteUrl ? (
+        <StyledLink as="a" href={href} aria-label="Home page">
+          {innerLogo}
+        </StyledLink>
+      ) : (
+        <StyledLink to={href} aria-label="Home page">
+          {innerLogo}
+        </StyledLink>
+      )}
+      {/* )} */}
     </Flex>
   );
 };
